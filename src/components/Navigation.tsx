@@ -72,6 +72,7 @@ export default function Navigation() {
               <li key={link.href}>
                 <button
                   onClick={() => handleLink(link.href)}
+
                   className="relative text-sm tracking-widest uppercase group"
                   style={{
                     color: scrolled ? 'var(--color-dark-brown)' : 'var(--color-cream)',
@@ -89,8 +90,10 @@ export default function Navigation() {
               </li>
             ))}
             <li>
-              <button
-                onClick={() => handleLink('#contact')}
+              <a
+                href="https://wa.me/0032487012332?text=Hallo%20Sofie%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20bij%20MindAway."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2.5 text-sm tracking-widest uppercase border transition-all duration-300 hover:bg-[var(--color-rose)] hover:border-[var(--color-rose)] hover:text-white"
                 style={{
                   borderColor: scrolled ? 'var(--color-dark-brown)' : 'var(--color-cream)',
@@ -101,7 +104,7 @@ export default function Navigation() {
                 }}
               >
                 Boek nu
-              </button>
+              </a>
             </li>
           </ul>
 
@@ -157,16 +160,18 @@ export default function Navigation() {
                 {link.label}
               </motion.button>
             ))}
-            <motion.button
+            <motion.a
+              href="https://wa.me/0032487012332?text=Hallo%20Sofie%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20bij%20MindAway."
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              onClick={() => handleLink('#contact')}
               className="mt-4 px-10 py-4 text-xl tracking-widest uppercase border border-[var(--color-rose)] text-[var(--color-rose)]"
               style={{ fontFamily: 'Cormorant Garamond, Georgia, serif' }}
             >
               Boek nu
-            </motion.button>
+            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>

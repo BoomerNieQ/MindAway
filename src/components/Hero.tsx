@@ -121,9 +121,11 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 1.4 }}
           className="mt-12 flex flex-col sm:flex-row gap-4 items-center justify-center"
         >
-          <button
-            onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-10 py-4 text-sm tracking-[0.2em] uppercase transition-all duration-400 hover:bg-[var(--color-rose)] hover:border-[var(--color-rose)]"
+          <a
+            href="https://wa.me/0032487012332?text=Hallo%20Sofie%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20bij%20MindAway."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-10 py-4 text-sm tracking-[0.2em] uppercase hover:bg-[var(--color-rose)] hover:border-[var(--color-rose)]"
             style={{
               border: '1px solid var(--color-cream)',
               color: 'var(--color-cream)',
@@ -133,7 +135,7 @@ export default function Hero() {
             }}
           >
             Boek een behandeling
-          </button>
+          </a>
           <button
             onClick={() => document.querySelector('#behandelingen')?.scrollIntoView({ behavior: 'smooth' })}
             className="text-sm tracking-[0.2em] uppercase flex items-center gap-3"
