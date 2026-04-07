@@ -86,6 +86,7 @@ export default function Contact() {
           >
             {[
               { label: 'Locatie', value: 'Lanaken, België' },
+              { label: 'Instagram', value: '@mindaway.massage', href: 'https://www.instagram.com/mindaway.massage/' },
               { label: 'Facebook', value: 'MindAway — Sofie Willems', href: 'https://www.facebook.com/p/MindAway-100088384664770/' },
               { label: 'Openingsuren', value: 'Op afspraak' },
             ].map((item) => (

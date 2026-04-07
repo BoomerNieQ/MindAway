@@ -10,6 +10,7 @@ import Gallery from '@/components/Gallery'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import MusicPlayer from '@/components/MusicPlayer'
+import WhatsApp from '@/components/WhatsApp'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Contact />
       <Footer />
       <MusicPlayer />
+      <WhatsApp />
     </main>
   )
 }

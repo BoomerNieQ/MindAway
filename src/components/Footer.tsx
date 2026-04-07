@@ -107,33 +107,43 @@ export default function Footer() {
           </motion.nav>
 
           {/* Social */}
-          <motion.a
-            href="https://www.facebook.com/p/MindAway-100088384664770/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.9, delay: 0.3 }}
-            className="flex items-center gap-3 group"
+            className="flex flex-col gap-4"
           >
-            <span
-              style={{
-                fontFamily: 'Cormorant Garamond, Georgia, serif',
-                color: 'var(--color-warm)',
-                fontSize: '0.85rem',
-                letterSpacing: '0.2em',
-                textTransform: 'uppercase',
-                transition: 'color 0.3s',
-              }}
-              className="group-hover:text-[var(--color-rose)]"
-            >
-              Facebook
-            </span>
-            <span
-              className="w-8 h-px group-hover:w-14 transition-all duration-500"
-              style={{ backgroundColor: 'var(--color-rose)' }}
-            />
-          </motion.a>
+            {[
+              { label: 'Instagram', href: 'https://www.instagram.com/mindaway.massage/' },
+              { label: 'Facebook', href: 'https://www.facebook.com/p/MindAway-100088384664770/' },
+            ].map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 group"
+              >
+                <span
+                  style={{
+                    fontFamily: 'Cormorant Garamond, Georgia, serif',
+                    color: 'var(--color-warm)',
+                    fontSize: '0.85rem',
+                    letterSpacing: '0.2em',
+                    textTransform: 'uppercase',
+                    transition: 'color 0.3s',
+                  }}
+                  className="group-hover:text-[var(--color-rose)]"
+                >
+                  {social.label}
+                </span>
+                <span
+                  className="w-8 h-px group-hover:w-14 transition-all duration-500"
+                  style={{ backgroundColor: 'var(--color-rose)' }}
+                />
+              </a>
+            ))}
+          </motion.div>
         </div>
 
         {/* Bottom */}
