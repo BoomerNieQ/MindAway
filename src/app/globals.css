@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #F7F0EB;
+  --color-warm: #EDD5C5;
+  --color-brown: #9B7B6B;
+  --color-dark-brown: #4A2E22;
+  --color-darkest: #1C100A;
+  --color-rose: #C4917A;
+}
+
+@theme inline {
+  --color-cream: #F7F0EB;
+  --color-warm: #EDD5C5;
+  --color-brown: #9B7B6B;
+  --color-dark-brown: #4A2E22;
+  --color-darkest: #1C100A;
+  --color-rose: #C4917A;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-darkest);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Split text animation */
+.split-line {
+  display: block;
+  overflow: hidden;
+}
+
+.split-word {
+  display: inline-block;
+  transform: translateY(110%);
+  will-change: transform;
+}
+
+/* Marquee */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee-left 28s linear infinite;
+}
+
+/* Image hover zoom */
+.img-zoom {
+  overflow: hidden;
+}
+
+.img-zoom img {
+  transition: transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.img-zoom:hover img {
+  transform: scale(1.07);
+}
+
+/* Cursor blend */
+.mix-blend {
+  mix-blend-mode: difference;
+}
+
+/* Line animation */
+@keyframes line-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
