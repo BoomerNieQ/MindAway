@@ -49,7 +49,7 @@ export default function Hero() {
           alt="MindAway massageruimte"
           fill
           priority
-          className="object-cover object-center"
+          className="object-contain object-center"
           sizes="100vw"
         />
       </motion.div>
@@ -73,10 +73,12 @@ export default function Hero() {
           initial={{ opacity: 0, letterSpacing: '0.3em' }}
           animate={{ opacity: 1, letterSpacing: '0.5em' }}
           transition={{ duration: 1.2, delay: 0.4 }}
-          className="text-xs md:text-sm uppercase mb-8 tracking-[0.15em] md:tracking-[0.5em]"
+          className="text-xs md:text-sm uppercase mb-8 tracking-[0.15em] md:tracking-[0.5em] inline-block px-4 py-1.5"
           style={{
             color: 'var(--color-rose)',
             fontFamily: 'Cormorant Garamond, Georgia, serif',
+            backgroundColor: 'rgba(28,16,10,0.55)',
+            backdropFilter: 'blur(6px)',
           }}
         >
           Massage Therapist · Lanaken
