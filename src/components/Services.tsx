@@ -92,7 +92,22 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
           </div>
         </div>
 
-        {/* Image - revealed on hover */}
+        {/* Image */}
+        <motion.div
+          className="relative shrink-0 img-zoom w-full md:w-auto"
+          style={{ width: undefined, height: undefined }}
+        >
+          <div className="block md:hidden relative w-full" style={{ height: '220px' }}>
+            <Image
+              src={service.image}
+              alt={service.title}
+              fill
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 opacity-20" style={{ background: 'linear-gradient(to bottom, transparent 60%, var(--color-darkest))' }} />
+          </div>
+        </motion.div>
         <motion.div
           className="hidden md:block relative shrink-0 img-zoom"
           style={{ width: '220px', height: '280px' }}

@@ -50,12 +50,12 @@ export default function About() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </motion.div>
-          {/* Decorative border */}
+          {/* Decorative border — alleen op desktop */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ duration: 1.2, delay: 0.5 }}
-            className="absolute -bottom-6 -right-6 w-48 h-48 border"
+            className="absolute -bottom-6 -right-6 w-48 h-48 border hidden md:block"
             style={{ borderColor: 'var(--color-rose)', opacity: 0.4 }}
           />
         </motion.div>
