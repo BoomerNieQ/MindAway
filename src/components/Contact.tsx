@@ -3,7 +3,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
-const WHATSAPP_NUMBER = '0032487012332'
+const WHATSAPP_NUMBER = '32487012332'
 const WHATSAPP_MESSAGE = 'Hallo Sofie, ik wil graag een afspraak maken bij MindAway.'
 
 export default function Contact() {

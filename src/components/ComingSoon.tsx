@@ -30,7 +30,7 @@ export default function ComingSoon() {
           className="text-xs tracking-[0.5em] uppercase"
           style={{ color: 'var(--color-rose)', fontFamily: 'Cormorant Garamond, Georgia, serif' }}
         >
-          Mei 2025
+          Mei 2026
         </motion.p>
 
         {/* Main text */}

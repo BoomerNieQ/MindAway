@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
 
-const WHATSAPP_NUMBER = '0032487012332'
+const WHATSAPP_NUMBER = '32487012332'
 const WHATSAPP_MESSAGE = 'Hallo Sofie, ik wil graag een afspraak maken bij MindAway.'
 
 export default function WhatsApp() {

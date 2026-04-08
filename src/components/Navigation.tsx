@@ -91,7 +91,7 @@ export default function Navigation() {
             ))}
             <li>
               <a
-                href="https://wa.me/0032487012332?text=Hallo%20Sofie%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20bij%20MindAway."
+                href="https://wa.me/32487012332?text=Hallo%20Sofie%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20bij%20MindAway."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-2.5 text-sm tracking-widest uppercase border transition-all duration-300 hover:bg-[var(--color-rose)] hover:border-[var(--color-rose)] hover:text-white"
@@ -161,7 +161,7 @@ export default function Navigation() {
               </motion.button>
             ))}
             <motion.a
-              href="https://wa.me/0032487012332?text=Hallo%20Sofie%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20bij%20MindAway."
+              href="https://wa.me/32487012332?text=Hallo%20Sofie%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20bij%20MindAway."
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}

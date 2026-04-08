@@ -122,7 +122,7 @@ export default function Hero() {
           className="mt-12 flex flex-col sm:flex-row gap-4 items-center justify-center"
         >
           <a
-            href="https://wa.me/0032487012332?text=Hallo%20Sofie%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20bij%20MindAway."
+            href="https://wa.me/32487012332?text=Hallo%20Sofie%2C%20ik%20wil%20graag%20een%20afspraak%20maken%20bij%20MindAway."
             target="_blank"
             rel="noopener noreferrer"
             className="px-10 py-4 text-sm tracking-[0.2em] uppercase hover:bg-[var(--color-rose)] hover:border-[var(--color-rose)]"
