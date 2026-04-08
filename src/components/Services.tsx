@@ -11,7 +11,7 @@ const services = [
     description:
       'Een diepe ontspannende massage die spanning en stress loslaat. Met zachte, vloeiende bewegingen wordt uw lichaam volledig tot rust gebracht.',
     duration: '30 / 60 min',
-    image: '/9.jpeg',
+    image: '/6.jpeg',
   },
   {
     number: '02',
