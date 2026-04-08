@@ -11,7 +11,7 @@ const services = [
     description:
       'Een diepe ontspannende massage die spanning en stress loslaat. Met zachte, vloeiende bewegingen wordt uw lichaam volledig tot rust gebracht.',
     duration: '30 / 60 min',
-    image: '/2.jpg',
+    image: '/9.jpeg',
   },
   {
     number: '02',
@@ -97,12 +97,12 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
           className="relative shrink-0 img-zoom w-full md:w-auto"
           style={{ width: undefined, height: undefined }}
         >
-          <div className="block md:hidden relative w-full" style={{ height: '220px' }}>
+          <div className="block md:hidden relative w-full" style={{ height: '220px', backgroundColor: 'var(--color-darkest)' }}>
             <Image
               src={service.image}
               alt={service.title}
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="100vw"
             />
             <div className="absolute inset-0 opacity-20" style={{ background: 'linear-gradient(to bottom, transparent 60%, var(--color-darkest))' }} />
