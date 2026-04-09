@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   creator: 'Sofie Willems',
   metadataBase: new URL('https://mindaway.be'),
   alternates: { canonical: 'https://mindaway.be' },
+  icons: {
+    icon: '/logo.jpg',
+    apple: '/logo.jpg',
+  },
   openGraph: {
     title: 'MindAway — Massage Lanaken | Sofie Willems',
     description: 'Massagepraktijk van Sofie Willems in Lanaken. Ontspanningsmassage, cuppingmassage en combinatiemassage. Op afspraak.',
