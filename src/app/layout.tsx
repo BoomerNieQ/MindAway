@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     url: 'https://mindaway.be',
     siteName: 'MindAway',
     locale: 'nl_BE',
+    images: [{ url: 'https://mindaway.be/logo.jpg', width: 800, height: 800, alt: 'MindAway logo' }],
   },
   robots: {
     index: true,
