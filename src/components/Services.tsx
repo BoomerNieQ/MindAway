@@ -98,7 +98,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
             src={service.image}
             alt={service.title}
             fill
-            className="object-cover"
+            className="object-cover object-[center_60%]"
             sizes="100vw"
           />
           <div className="absolute inset-0 opacity-20" style={{ background: 'linear-gradient(to bottom, transparent 60%, var(--color-darkest))' }} />
@@ -136,7 +136,7 @@ export default function Services() {
   return (
     <section
       id="behandelingen"
-      className="py-32 md:py-48"
+      className="pt-32 pb-8 md:pt-48 md:pb-12"
       style={{ backgroundColor: 'var(--color-darkest)' }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
