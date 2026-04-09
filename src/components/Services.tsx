@@ -98,7 +98,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
             src={service.image}
             alt={service.title}
             fill
-            className="object-cover object-[center_60%]"
+            className="object-cover object-bottom"
             sizes="100vw"
           />
           <div className="absolute inset-0 opacity-20" style={{ background: 'linear-gradient(to bottom, transparent 60%, var(--color-darkest))' }} />
