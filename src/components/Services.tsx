@@ -21,7 +21,8 @@ const services = [
       'Een traditionele techniek waarbij vacuümkopjes worden geplaatst om spierspanning te verlichten, de doorbloeding te stimuleren en toxines af te voeren.',
     duration: '30 / 45 / 60 min',
     image: '/cupping1.jpeg',
-    mobilePosition: 'object-top',
+    mobilePosition: 'object-center',
+    mobileHeight: '320px',
   },
   {
     number: '03',
@@ -96,7 +97,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
         </div>
 
         {/* Image mobile */}
-        <div className="block md:hidden relative w-full" style={{ height: '220px' }}>
+        <div className="block md:hidden relative w-full" style={{ height: service.mobileHeight ?? '220px' }}>
           <Image
             src={service.image}
             alt={service.title}
