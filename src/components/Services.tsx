@@ -12,6 +12,7 @@ const services = [
       'Een diepe ontspannende massage die spanning en stress loslaat. Met zachte, vloeiende bewegingen wordt uw lichaam volledig tot rust gebracht.',
     duration: '30 / 60 min',
     image: '/gebruiken1.jpeg',
+    mobilePosition: 'object-bottom',
   },
   {
     number: '02',
@@ -20,6 +21,7 @@ const services = [
       'Een traditionele techniek waarbij vacuümkopjes worden geplaatst om spierspanning te verlichten, de doorbloeding te stimuleren en toxines af te voeren.',
     duration: '30 / 45 / 60 min',
     image: '/cupping1.jpeg',
+    mobilePosition: 'object-top',
   },
   {
     number: '03',
@@ -28,6 +30,7 @@ const services = [
       'De kracht van ontspanningsmassage en cupping gecombineerd in één behandeling — voor optimale ontspanning én doorbloeding.',
     duration: '60 min',
     image: '/3.jpg',
+    mobilePosition: 'object-center',
   },
 ]
 
@@ -98,7 +101,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
             src={service.image}
             alt={service.title}
             fill
-            className="object-cover object-bottom"
+            className={`object-cover ${service.mobilePosition}`}
             sizes="100vw"
           />
           <div className="absolute inset-0 opacity-20" style={{ background: 'linear-gradient(to bottom, transparent 60%, var(--color-darkest))' }} />
