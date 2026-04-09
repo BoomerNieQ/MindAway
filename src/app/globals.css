@@ -51,7 +51,7 @@ body {
 }
 
 .marquee-track {
-  animation: marquee-left 28s linear infinite;
+  animation: marquee-left 60s linear infinite;
 }
 
 /* Image hover zoom */
