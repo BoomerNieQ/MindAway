@@ -115,7 +115,7 @@ export default function Contact() {
               }}
               className="text-left md:text-right"
             >
-              Stuur een berichtje via WhatsApp en Sofie neemt zo snel mogelijk contact op.
+              Stuur een berichtje via WhatsApp, Instagram of Facebook — Sofie neemt zo snel mogelijk contact op.
             </p>
             <a
               href={whatsappHref}

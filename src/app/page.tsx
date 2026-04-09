@@ -5,6 +5,7 @@ import Marquee from '@/components/Marquee'
 import Services from '@/components/Services'
 import Pricing from '@/components/Pricing'
 import VideoBreaker from '@/components/VideoBreaker'
+import GiftCard from '@/components/GiftCard'
 import ComingSoon from '@/components/ComingSoon'
 import Gallery from '@/components/Gallery'
 import Contact from '@/components/Contact'
@@ -21,6 +22,7 @@ export default function Home() {
       <Marquee />
       <Services />
       <Pricing />
+      <GiftCard />
       <ComingSoon />
       <VideoBreaker />
       <Gallery />

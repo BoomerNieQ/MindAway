@@ -11,7 +11,7 @@ const services = [
     description:
       'Een diepe ontspannende massage die spanning en stress loslaat. Met zachte, vloeiende bewegingen wordt uw lichaam volledig tot rust gebracht.',
     duration: '30 / 60 min',
-    image: '/6.jpeg',
+    image: '/Gebruiken%201.jpeg',
   },
   {
     number: '02',
@@ -19,7 +19,7 @@ const services = [
     description:
       'Een traditionele techniek waarbij vacuümkopjes worden geplaatst om spierspanning te verlichten, de doorbloeding te stimuleren en toxines af te voeren.',
     duration: '30 / 45 / 60 min',
-    image: '/8.jpeg',
+    image: '/cupping%201.jpeg',
   },
   {
     number: '03',
