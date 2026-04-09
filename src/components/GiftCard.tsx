@@ -32,7 +32,7 @@ export default function GiftCard() {
         >
           <motion.div className="absolute inset-0" style={{ y: imageY }}>
             <Image
-              src="/Cadeaubonnen%201.jpeg"
+              src="/cadeaubonnen1.jpeg"
               alt="MindAway cadeaubon"
               fill
               className="object-cover object-center"

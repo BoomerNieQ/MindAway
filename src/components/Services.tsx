@@ -11,7 +11,7 @@ const services = [
     description:
       'Een diepe ontspannende massage die spanning en stress loslaat. Met zachte, vloeiende bewegingen wordt uw lichaam volledig tot rust gebracht.',
     duration: '30 / 60 min',
-    image: '/Gebruiken%201.jpeg',
+    image: '/gebruiken1.jpeg',
   },
   {
     number: '02',
@@ -19,7 +19,7 @@ const services = [
     description:
       'Een traditionele techniek waarbij vacuümkopjes worden geplaatst om spierspanning te verlichten, de doorbloeding te stimuleren en toxines af te voeren.',
     duration: '30 / 45 / 60 min',
-    image: '/cupping%201.jpeg',
+    image: '/cupping1.jpeg',
   },
   {
     number: '03',
@@ -92,22 +92,19 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
           </div>
         </div>
 
-        {/* Image */}
-        <motion.div
-          className="relative shrink-0 img-zoom w-full md:w-auto"
-          style={{ width: undefined, height: undefined }}
-        >
-          <div className="block md:hidden relative w-full" style={{ height: '220px', backgroundColor: 'var(--color-darkest)' }}>
-            <Image
-              src={service.image}
-              alt={service.title}
-              fill
-              className="object-contain"
-              sizes="100vw"
-            />
-            <div className="absolute inset-0 opacity-20" style={{ background: 'linear-gradient(to bottom, transparent 60%, var(--color-darkest))' }} />
-          </div>
-        </motion.div>
+        {/* Image mobile */}
+        <div className="block md:hidden relative w-full" style={{ height: '220px' }}>
+          <Image
+            src={service.image}
+            alt={service.title}
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 opacity-20" style={{ background: 'linear-gradient(to bottom, transparent 60%, var(--color-darkest))' }} />
+        </div>
+
+        {/* Image desktop */}
         <motion.div
           className="hidden md:block relative shrink-0 img-zoom"
           style={{ width: '220px', height: '280px' }}
