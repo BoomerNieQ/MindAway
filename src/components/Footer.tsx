@@ -164,7 +164,15 @@ export default function Footer() {
           >
             © {new Date().getFullYear()} MindAway — Sofie Willems. Alle rechten voorbehouden.
           </p>
-          <div className="flex items-center gap-2" style={{ opacity: 0.5 }}>
+          <a
+            href="https://tessmaedia.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+            style={{ opacity: 0.5, transition: 'opacity 0.3s' }}
+            onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
+            onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.5')}
+          >
             <span
               style={{
                 fontFamily: 'Cormorant Garamond, Georgia, serif',
@@ -179,7 +187,7 @@ export default function Footer() {
             <div className="relative" style={{ width: '80px', height: '24px' }}>
               <Image src="/tessmaedia-logo.png" alt="TessMaedia" fill className="object-contain" />
             </div>
-          </div>
+          </a>
         </motion.div>
       </div>
     </footer>
