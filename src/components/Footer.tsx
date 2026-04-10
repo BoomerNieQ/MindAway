@@ -164,16 +164,30 @@ export default function Footer() {
           >
             © {new Date().getFullYear()} MindAway — Sofie Willems. Alle rechten voorbehouden.
           </p>
-          <p
-            style={{
-              fontFamily: 'Cormorant Garamond, Georgia, serif',
-              color: 'rgba(155,123,107,0.4)',
-              fontSize: '0.75rem',
-              letterSpacing: '0.1em',
-            }}
+          <a
+            href="https://tessmaedia.be"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 group"
+            style={{ opacity: 0.5, transition: 'opacity 0.3s' }}
+            onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
+            onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.5')}
           >
-            Lanaken, België
-          </p>
+            <span
+              style={{
+                fontFamily: 'Cormorant Garamond, Georgia, serif',
+                color: 'var(--color-brown)',
+                fontSize: '0.75rem',
+                letterSpacing: '0.15em',
+                textTransform: 'uppercase',
+              }}
+            >
+              Designed by
+            </span>
+            <div className="relative" style={{ width: '80px', height: '24px' }}>
+              <Image src="/tessmaedia-logo.png" alt="TessMaedia" fill className="object-contain" />
+            </div>
+          </a>
         </motion.div>
       </div>
     </footer>
