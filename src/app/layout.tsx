@@ -21,8 +21,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mindaway.be'),
   alternates: { canonical: 'https://mindaway.be' },
   icons: {
-    icon: '/logo.jpg',
-    apple: '/logo.jpg',
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
   },
   openGraph: {
     title: 'MindAway — Massage Lanaken | Sofie Willems',
@@ -49,6 +53,8 @@ const jsonLd = {
   name: 'MindAway',
   description: 'Massagepraktijk van Sofie Willems in Lanaken. Ontspanningsmassage, cuppingmassage en combinatiemassage.',
   url: 'https://mindaway.be',
+  logo: 'https://mindaway.be/logo.jpg',
+  image: 'https://mindaway.be/logo.jpg',
   telephone: '+32487012332',
   address: {
     '@type': 'PostalAddress',
