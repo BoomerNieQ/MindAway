@@ -165,7 +165,7 @@ export default function Footer() {
             © {new Date().getFullYear()} MindAway — Sofie Willems. Alle rechten voorbehouden.
           </p>
           <a
-            href="https://tessmaedia.com"
+            href="https://tessmaedia.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
