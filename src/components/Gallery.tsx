@@ -84,8 +84,8 @@ export default function Gallery() {
 
         {/* Row 3: breed + cupping */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
-          <FadeImage src="/11.jpeg" alt="Overzicht van de ruimte" delay={0.05} style={{ height: 'clamp(220px, 45vw, 400px)' }} />
-          <FadeImage src="/cupping2.jpeg" alt="Cupping behandeling" delay={0.12} style={{ height: 'clamp(220px, 45vw, 400px)' }} objectPosition="top" />
+          <FadeImage src="/11.jpeg" alt="Overzicht van de ruimte" delay={0.05} style={{ height: 'clamp(360px, 65vw, 580px)' }} />
+          <FadeImage src="/cupping2.jpeg" alt="Cupping behandeling" delay={0.12} style={{ height: 'clamp(360px, 65vw, 580px)' }} objectPosition="top center" />
         </div>
 
         {/* Tess — persoonlijk moment, geen promotie */}
