@@ -81,9 +81,10 @@ export default function Gallery() {
           <FadeImage src="/10.jpeg" alt="Boeddha en zoutlamp" delay={0.18} className="col-span-2 md:col-span-1" style={{ height: 'clamp(180px, 35vw, 320px)' }} />
         </div>
 
-        {/* Row 3: breed */}
-        <div className="mb-4 md:mb-6">
+        {/* Row 3: breed + cupping */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
           <FadeImage src="/11.jpeg" alt="Overzicht van de ruimte" delay={0.05} style={{ height: 'clamp(220px, 45vw, 400px)' }} />
+          <FadeImage src="/cupping2.jpeg" alt="Cupping behandeling" delay={0.12} style={{ height: 'clamp(220px, 45vw, 400px)' }} />
         </div>
 
         {/* Tess — persoonlijk moment, geen promotie */}
