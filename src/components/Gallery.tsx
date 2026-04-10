@@ -4,13 +4,14 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 
-function FadeImage({ src, alt, delay = 0, className = '', style = {}, objectPosition = 'center' }: {
+function FadeImage({ src, alt, delay = 0, className = '', style = {}, objectPosition = 'center', objectFit = 'cover' }: {
   src: string
   alt: string
   delay?: number
   className?: string
   style?: React.CSSProperties
   objectPosition?: string
+  objectFit?: 'cover' | 'contain'
 }) {
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true, margin: '-8% 0px' })
@@ -24,7 +25,7 @@ function FadeImage({ src, alt, delay = 0, className = '', style = {}, objectPosi
       className={`relative overflow-hidden img-zoom ${className}`}
       style={style}
     >
-      <Image src={src} alt={alt} fill className="object-cover" style={{ objectPosition }} sizes="(max-width: 768px) 100vw, 50vw" />
+      <Image src={src} alt={alt} fill className={objectFit === 'contain' ? 'object-contain' : 'object-cover'} style={{ objectPosition }} sizes="(max-width: 768px) 100vw, 50vw" />
     </motion.div>
   )
 }
@@ -85,7 +86,7 @@ export default function Gallery() {
         {/* Row 3: breed + cupping */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
           <FadeImage src="/11.jpeg" alt="Overzicht van de ruimte" delay={0.05} style={{ height: 'clamp(360px, 65vw, 580px)' }} />
-          <FadeImage src="/cupping2.jpeg" alt="Cupping behandeling" delay={0.12} style={{ height: 'clamp(360px, 65vw, 580px)' }} objectPosition="top center" />
+          <FadeImage src="/cupping2.jpeg" alt="Cupping behandeling" delay={0.12} style={{ height: 'clamp(360px, 65vw, 580px)' }} objectFit="contain" />
         </div>
 
         {/* Tess — persoonlijk moment, geen promotie */}
